@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: green;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        h2 {
+            text-align: center;
+            color: #3b5998;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .btn {
+            background-color: #3b5998;
+            color: orange;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #365899;
+        }
+        .gender-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        .gender-section input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Facebook Registration</h2>
+        <form action="" method="POST">
+            <!-- Name -->
+            <input type="text" class="input-field" name="first_name" placeholder="First Name" required>
+            <input type="text" class="input-field" name="last_name" placeholder="Last Name" required>
+
+            <!-- Email -->
+            <input type="email" class="input-field" name="email" placeholder="Email Address" required>
+
+            <!-- Password -->
+            <input type="password" class="input-field" name="password" placeholder="New Password" required>
+
+            <!-- Date of Birth -->
+            <input type="date" class="input-field" name="dob" placeholder="Date of Birth" required>
+
+            <!-- Gender -->
+            <div class="gender-section">
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="male"> Male
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender" value="female"> Female
+                </label>
+                <label for="other">
+                    <input type="radio" id="other" name="gender" value="other"> Other
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+    </div>
+
+</body>
+</html>
